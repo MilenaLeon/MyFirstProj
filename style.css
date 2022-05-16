@@ -1,0 +1,174 @@
+*{font-family: 'Times New Roman', Times, serif;
+    margin: 1.2em;
+    color:rgb(65, 95, 52)
+
+}
+
+.container{
+    width: 75%;
+    background-color: aliceblue;
+    border-radius: 50px 50px 50px 50px;
+    margin: 5% auto;
+    padding: 30p;
+    min-width: 20em;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+}
+
+.headline-center {
+    color: rgb(22, 81, 102);
+    
+    transition: 1s;
+    text-align:left;
+    align-items: left;
+}
+
+.headline-center:hover{
+    transform: scale(1.2);
+}
+
+.main-box{
+    font-size: 18px;
+    width: 95%;
+    height: 310px;
+    background-color: rgb(196, 223, 247);
+    border-radius: 50px 50px 50px 50px;
+    margin: 5% auto;
+    margin-top: 10px;
+    padding: 30p;
+    min-width: 20em;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+}
+
+.experience-box{
+    white-space: nowrap;
+    font-size: 18px;
+    width: 95%;
+    height: auto;
+    background-color: rgb(196, 223, 247);
+    border-radius: 50px 50px 50px 50px;
+    margin: 5% auto;
+    padding: 50p;
+    min-width: 20em;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+
+}
+.textcols .textcols-item:first-child {
+	margin-right: 4%;
+}
+
+.image{
+    transition: 1s;
+    text-align:left;
+    align-items: left;
+    border-radius: 50%;
+    border: 5px solid aliceblue;
+    box-shadow: 2px 1px 5px #999999;
+    float:left;
+    margin: 50px 50px 50px 0;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+body{
+    background-color: rgb(173, 217, 255);
+    display: flex;
+    justify-content: space-around;
+    align-content: ceneter;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.078, #69a2f3));
+    --img-url: url(https://sun9-59.userapi.com/s/v1/ig2/pTh8p5R9goP6yvhu7ZPonSFe5oc4TGDJTSSK7ohICk_YG0lhNwUIpnvB5A3MZ2LrRSbiydwHGuAPD5tN9GGiqn5P.jpg?size=1620x2160&quality=95&type=album);
+}
+
+.social-icons {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+.social-icons a {
+    position: relative;
+    left: -23px;
+    background-color: #eee;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: background-color .3s ease-in-out;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+}
+
+.social-icons a:hover {
+    background-color: #e0e0e0;
+}
+
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: .5rem;
+    top: .5rem;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.social-icons .social-icon-telegram::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%2327a7e7' d='M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z'/%3E%3C/svg%3E");
+}
+
+.buttons_box{
+    white-space: nowrap;
+    font-size: 18px;
+    position: relative;
+    width: 95%;
+    height: auto;
+    background-color: rgb(196, 223, 247);
+    border-radius: 50px 50px 50px 50px;
+    margin: 5% auto;
+    padding: 50p;
+    min-width: 20em;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+}
+
+.buttons_box input, #inp_3, #inp_4{
+    border: none;
+    appearance: none;
+    background: rgb(134, 197, 253);
+    padding: 12px;
+    border-radius: 50px;
+    width: 250px;
+    font-size:18px;
+}    
+
+.button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color:rgb(0, 28, 56);
+    border-radius: 50px;
+    background-color: rgb(134, 197, 253);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(), rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0);
+    box-shadow: insert 2px 2px 3px rgba(255, 255, 255, .6), insert -2px -2px 3px rgba(0, 0, 0, 1);
+}
