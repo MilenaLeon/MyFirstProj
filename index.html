@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <title>English Teacher Milena</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="script.js"></script>
 </head>
+
 
 <body>
     <div class="container">
         <header>
-            <img class="image" src="site.jpg" alt="" width=270 align="left">
-            <h1 class="headline-center">Милена Леонтьева<br>
-                Преподаватель по английскому языку</h1>
+            <img class="image" src="site.jpg" alt="" width=270 align="left" >
+        <h1 class="headline_center">Милена Леонтьева<br>
+        Преподаватель по английскому языку</h1>
         </header>
-        <main class="main-box">
+        <main class="main_box">
             <h2>Помогу Вам:</h2>
             <ul>
                 <li>Развить общий английский</li>
@@ -25,10 +25,11 @@
                 <li>Сдать экзамены: ФГОС, ОГЭ и ЕГЭ</li>
                 <li>Достичь необходимого уровня владения языком</li>
                 <li>Освоить английский в сферах безнеса и туризма</li>
-            </ul>
+            </ul>  
         </main>
-        <div class="experience-box">
-            <div class="textcols-item">
+
+        <div class ="experience_box">
+            <div class="textcols_item">
                 <h3>Опыт работы учителем и переводчиком - 4.5 года</h3>
                 <ul>
                     <li>Englex</li>
@@ -39,44 +40,45 @@
                     <li>Языковая школа “Speak English”</li>
                 </ul>
             </div>
-            <div class="textcols-item">
+            <div class="textcols_item">
                 <h3>Образование:</h3>
                 <p>Бакалавриат - КФУ, факультет "Лингвистика"</p>
                 <h3>Уровень знания английского языка - C1</h3>
                 <h4>Жду Вас на занятиях!</h4>
-                <div class="social-icons">
-                    <a class="social-icon-telegram" href="https://t.me/milenaleon" title="" target="_blank"
-                        rel="noopener"></a>
-                </div>
+                <div class="social_icons">
+                    <a class="social_icon_telegram" href="https://t.me/milenaleon" title="" target="_blank" rel="noopener"></a>
+                </div>  
             </div>
         </div>
         <div class="buttons_box" id="customers">
             <form action="personal_data">
-                Фамилия Имя: <input type="text" name="name" surname="surname" id="inp_1"><br>
-                Возраст: <input type="text" age="age" id="inp_2"><br>
-                <form name="f1">
+                Имя: <input type="text" id="name"><br>
+                Фамилия: <input type="text" id="surname"><br>
+                Возраст: <input type="text" id="age"><br>
+                <form>
                     Уровень английского языка:
-                    <select name="level" id="inp_3">
-                        <option value="beg">Beginner</option>
-                        <option value="elem">Elementary</option>
-                        <option value="int">Intermediate</option>
-                        <option value="upper">Upper-Intermediate</option>
-                        <option value="adv">Advanced</option>
-                        <option value="prof">Proficiency</option>
+                    <select id="english_level">
+                        <option value="beginner">Beginner</option>
+                        <option value="elementary">Elementary</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="upper_intermediate">Upper-Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="proficiency">Proficiency</option>
                     </select>
                 </form>
-                <form name="f2">
+                <form>
                     Выбрать тариф:
-                    <select name="tariff" id="inp_4">
+                    <select id="rate">
                         <option value="stable">Стабильный</option>
                         <option value="changeable">Изменяемый</option>
                     </select>
                 </form>
-                <p>Назначить занятие:<input type="datetime-local" / id="inp_5"></p>
-                <input onclick="multi()" class="button" type="button" value="Подать заявку на обучение!">
+                <p>Назначить занятие:<input type="datetime-local"/ id="date"></p>
+                <button onclick="multi()" id="first_button">Подать заявку на обучение!</button>
+                <button id="second_button" onclick="upload()">Загрузить свои данные</button>
+                <input id="file_input" type="file" style="display: none;" />
             </form>
         </div>
     </div>
 </body>
-
 </html>
