@@ -1,4 +1,3 @@
-
 function downloadFile(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -9,32 +8,51 @@ function downloadFile(filename, text) {
 
     element.click();
 
-    //document.body.removeChild(element);
+    document.body.removeChild(element);
 }
 
 function multi() {
-    const lessonRecord = {
+    const lesson_record = {
         name: '',
+        surname: '',
         age: '',
-        englishLevel: '',
+        english_level: '',
         rate: '',
         date: ''
     };
-    // const name = '';
-    // const age = '';
 
 
-    lessonRecord.name = document.getElementById('inp_1').value;
-    lessonRecord.age = document.getElementById('inp_2').value;
-    lessonRecord.englishLevel = document.getElementById('inp_3').value;
-    lessonRecord.rate = document.getElementById('inp_4').value;
-    lessonRecord.date = document.getElementById('inp_5').value;
+    lesson_record.name = document.getElementById('name').value;
+    lesson_record.surname = document.getElementById('surname').value;
+    lesson_record.age = document.getElementById('age').value;
+    lesson_record.english_level = document.getElementById('english_level').value;
+    lesson_record.rate = document.getElementById('rate').value;
+    lesson_record.date = document.getElementById('date').value;
 
-    console.warn(lessonRecord);
+    console.warn(lesson_record);
 
-    const qwe = JSON.stringify(lessonRecord, null, "\t");
-    console.warn(qwe);
-    const aaa = JSON.parse(qwe);
-    console.warn(aaa);
-    downloadFile("hello.json", qwe);
+    const users_data = JSON.stringify(lesson_record, null, "\t");
+    console.warn(users_data);
+    downloadFile("hello.json", users_data);
 }
+
+function upload() {
+    document.getElementById("file_input").click();
+
+    var control = document.getElementById("file_input");
+    control.addEventListener("change", function(event) {
+        var i = 0,
+        files = control.files,
+        len = files.length;
+        new_data = JSON.stringify(files, null, "\t");
+
+    for (; i < len; i++) {
+        console.log("Filename: " + files[i].name);
+        console.log("Type: " + files[i].type);
+        console.log("Size: " + files[i].size + " bytes");
+        console.log("Data: " + new_data);
+        alert("Файл был успешно загружен.");
+    }
+ 
+}, false);
+};
