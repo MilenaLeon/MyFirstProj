@@ -160,7 +160,38 @@ body{
     font-size:18px;
 }    
 
-#first_button, #second_button {
+.file {
+    opacity: 0;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+}
+
+.file_input label {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgb(134, 197, 253);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(0, 28, 56);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+}
+
+#fileinput {
+    style="display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#apply_button, #load_button {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -170,5 +201,8 @@ body{
     border-radius: 50px;
     background-color: rgb(134, 197, 253);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(), rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0);
-    box-shadow: insert 2px 2px 3px rgba(255, 255, 255, .6), insert -2px -2px 3px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform .2s ease-out;
 }
+
