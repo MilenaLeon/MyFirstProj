@@ -24,7 +24,7 @@
                 <li>Детально разобрать грамматику</li>
                 <li>Сдать экзамены: ФГОС, ОГЭ и ЕГЭ</li>
                 <li>Достичь необходимого уровня владения языком</li>
-                <li>Освоить английский в сферах безнеса и туризма</li>
+                <li>Освоить английский в сферах бизнеса и туризма</li>
             </ul>  
         </main>
 
@@ -74,9 +74,16 @@
                     </select>
                 </form>
                 <p>Назначить занятие:<input type="datetime-local"/ id="date"></p>
-                <button onclick="multi()" id="first_button">Подать заявку на обучение!</button>
-                <button id="second_button" onclick="upload()">Загрузить свои данные</button>
-                <input id="file_input" type="file" style="display: none;" />
+                <button onclick="apply()" id="apply_button">Подать заявку на обучение!</button>
+
+                <form id="json_file" name="json_file" enctype="multipart/form-data" method="post">
+                    <div class="file_input">
+                        <input type="file" id="fileinput" class="file">
+                        <label for="file">Выбрать файл</label>
+                        <input type="button" id="load_button" value="Загрузить свои данные" onclick="load_file()">
+                    </div>
+                                        
+                </form>
             </form>
         </div>
     </div>
