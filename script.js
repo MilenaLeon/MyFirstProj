@@ -39,11 +39,6 @@ function apply() {
 function load_file() {
     var input, file, fr;
 
-    // if (typeof window.FileReader !== 'function') {
-    //   alert("The file API isn't supported on this browser yet.");
-    //   return;
-    // }
-
     input = document.getElementById("fileinput");
 
     if (!input) {
@@ -76,31 +71,3 @@ function load_file() {
       return newArr;
     }
   }
-
-
-  
-// function upload() {
-//     //document.getElementById("file_input").click();
-//     let frame = document.getElementById('qqq');
-//     frame.src=URL.createObjectURL(event.target.files[0]);
-//     console.warn('qqqq', event.target.files[0]);
-    
-//     data =  event.target.files[0].lastModified;
-
-// //     var control = document.getElementById("file_input");
-// //     control.addEventListener("change", function(event) {
-// //         var i = 0,
-// //         files = control.files,
-// //         len = files.length;
-// //         new_data = JSON.stringify(files, null, "\t");
-
-// //     for (; i < len; i++) {
-// //         console.log("Filename: " + files[i].name);
-// //         console.log("Type: " + files[i].type);
-// //         console.log("Size: " + files[i].size + " bytes");
-// //         console.log("Data: " + new_data);
-// //         alert("Файл был успешно загружен.");
-// //     }
- 
-// // }, false);
-// };
